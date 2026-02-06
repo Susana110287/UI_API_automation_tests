@@ -29,19 +29,6 @@
 - Allure (генерация отчётов);
 - webdriver‑manager (автоустановка драйверов).
 
-## Структура проекта
-.
-├── tests/
-    |____ config.py
-    |____ conftest.py
-    |____ ExtendedSearchUI.py
-    |____ test_api.py
-    |____ test_ui.py
-├── venv/
-├── requirements.txt
-├── allure-results/
-└── README.md
-
 ## Инструкции по запуску тестов
 1. Предварительные требования
 Убедитесь, что установлены:
@@ -80,11 +67,11 @@ pytest ui/test_ui.py -v
 bash
 pytest api/test_api.py -v
 
-##Все тесты сразу:
+## Все тесты сразу:
 bash
 pytest -v
 
-##Запуск с генерацией отчёта Allure
+## Запуск с генерацией отчёта Allure
 Выполните тесты с сохранением результатов:
 bash
 pytest ui/test_ui.py api/test_api.py --alluredir=./allure-results
