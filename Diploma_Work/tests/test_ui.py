@@ -15,6 +15,7 @@ def driver():
 
 
 @allure.feature("Расширенный поиск на Кинопоиске")
+@pytest.mark.ui
 class TestExtendedSearch:
 
     @allure.story("1. Поиск по названию фильма")
